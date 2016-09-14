@@ -1,0 +1,146 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Orders",
+		"_postman_id": "e8c5edb6-283d-399c-741a-0f05f2175403",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ORder1-Switches Quantity 10",
+			"request": {
+				"url": "http://localhost:8000/web/index_dev.php/receive-order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order",
+							"value": "{   \"id\": \"1\",   \"customer-id\": \"1\",   \"items\": [     {       \"product-id\": \"B102\",       \"quantity\": \"10\",       \"unit-price\": \"4.99\",       \"total\": \"49.90\"     }   ],   \"total\": \"49.90\" }",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ORder1- Switches Quantity 15",
+			"request": {
+				"url": "http://localhost:8000/web/index_dev.php/receive-order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order",
+							"value": "{   \"id\": \"1\",   \"customer-id\": \"1\",   \"items\": [     {       \"product-id\": \"B102\",       \"quantity\": \"15\",       \"unit-price\": \"4.99\",       \"total\": \"49.90\"     }   ],   \"total\": \"49.90\" }",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Order2",
+			"request": {
+				"url": "http://localhost:8000/web/index_dev.php/receive-order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order",
+							"value": "{   \"id\": \"2\",   \"customer-id\": \"2\",   \"items\": [     {       \"product-id\": \"B102\",       \"quantity\": \"5\",       \"unit-price\": \"4.99\",       \"total\": \"24.95\"     }   ],   \"total\": \"24.95\" }",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Order 3",
+			"request": {
+				"url": "http://localhost:8000/web/index_dev.php/receive-order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order",
+							"value": "{\"id\":\"3\",\"customer-id\":\"3\",\"items\":[{\"product-id\":\"A101\",\"quantity\":\"2\",\"unit-price\":\"9.75\",\"total\":\"19.50\"},{\"product-id\":\"A102\",\"quantity\":\"1\",\"unit-price\":\"49.50\",\"total\":\"49.50\"}],\"total\":\"69.00\"}",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Order4 more than 1000",
+			"request": {
+				"url": "http://localhost:8000/web/index_dev.php/receive-order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "//Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order",
+							"value": "{\"id\":\"3\",\"customer-id\":\"3\",\"items\":[{\"product-id\":\"A101\",\"quantity\":\"1\",\"unit-price\":\"1950\",\"total\":\"1950.00\"}],\"total\":\"1999.50\"}",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
