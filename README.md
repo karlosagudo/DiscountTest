@@ -1,6 +1,6 @@
 # DiscountTest
 
-Before.
+##Before.
 
 I only have an afternoon to develop this, and its a pity.
 Cause i can't develop unit test, or do a refactor, for example in apply discounts etc.
@@ -22,7 +22,7 @@ Using Orders.postman_collection.json
 BTW: ITs the first time i do an app in silex..but i wanted to try.
 
 
-Steps (while I develop):
+##Steps (while I develop):
 
 1. I put in app.php a small code in order to have in the container the data. I wish to have more time
 in order to make it better.. just a piece of code that will give me the data inside the container, since its very small
@@ -40,6 +40,10 @@ ammount of data.
    
 
  
- 
+##Execute
+1. Load the collection into postman
+2. Execute in the root of the folder: php -S localhost:8000
+3. Execute the orders in the collection.
+
 
 
